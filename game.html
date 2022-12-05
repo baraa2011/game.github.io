@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="game.css">
+   <title>Game</title>
+</head>
+
+<body>
+   <div class="board">
+      <div class="history hidden">
+         <h3 class="history-title">Games history</h3>
+         <div class="history-score">
+         <div class="wins-loses">         
+            <p class="history-win history-text"></p>
+            <p class="history-lose history-text"></p>
+         </div>
+            <div class="score-lives">
+               <p class="top-score history-text"></p>
+               <p class="top-lives history-text"></p>
+            </div>
+         </div>
+            <button class="clear-history-button">Clear history</button>
+      </div>
+      <div class="container">
+         <div class="game-info-top">
+            <div class="score">Lives: <span class="live-points">6</span></div>
+            <button class="new-game-button">New Game</button>
+         </div>
+         
+         <div class="game-info-bottom">
+            <div class="score">Score: <span class="score-points">0</span></div>
+            <div class="score">Remaining matches: <span class="match-points">8</span></div>
+         </div>
+      </div>
+   </div>
+
+   <div class="modal hidden">
+      <div class="modal-info">
+         <h3 class="modal-title"></h3>
+         <p class="modal-text"></p>
+         <button class="new-game-button modal-button">New Game</button>
+      </div>
+   </div>
+
+   <div class="bonus invisible">
+   <h1 class="bonus-title">Bonus</h1>
+   <h1 class="bonus-subtitle">+1 Live</h1>
+   </div>
+   <!-- <script src="game.js"></script> -->
+   <script src="game.js"></script>
+</body>
+
+</html>
